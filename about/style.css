@@ -4,28 +4,103 @@
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1.7fr 10fr;
-	grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas:
-		"navigation row1 row1"
-		"navigation row2 row2"
-		"navigation row3 row3"
-		". row4 row4"
-		". row5 row5"
-		". row6 row6";
+	grid-template-rows: 1fr;
+	grid-template-areas: "navigation row";
 }
 
 #navigation {
 	background-color: #dbdbdb;
 	grid-area: navigation;
+	display: block;
+	float: left;
+	position: fixed;
+	height: 100vh;
 }
 
-#text {
-	align-items: center;
-	grid-area: text;
-	display: grid;
-}
-
-#picture {
-	grid-area: picture;
+#row {
+	grid-area: row;
+	width: 100%;
 }
 /* end of grid setting */
+
+.row {
+	padding: 3vw;
+}
+
+#row1 {
+	background-color: #d77878;
+	grid-area: row1;
+}
+
+#row2 {
+	background-color: #f2cfcf;
+	grid-area: row2;
+}
+
+#row3 {
+	background-color: #d04e4e;
+	grid-area: row3;
+}
+
+#row3 img:hover {
+	content: url("/about/pic/r3-hover.png");
+}
+
+#row4 {
+	background-color: #dd9696;
+	grid-area: row4;
+}
+
+#row5 {
+	background-color: #bc6262;
+	grid-area: row5;
+}
+
+#row6 {
+	background-color: #dd9696;
+	grid-area: row6;
+}
+
+#row1 img,
+#row3 img,
+#row5 img {
+	margin-left: 4vw;
+	height: 20vw;
+	float: right;
+	display: block;
+	border-radius: 1.5vw;
+}
+
+#row1 p,
+#row3 p,
+#row5 p {
+	display: table-cell;
+	height: 20vw;
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.6vw;
+	color: azure;
+	vertical-align: middle;
+}
+
+#row2 img,
+#row4 img,
+#row6 img {
+	margin-right: 4vw;
+	height: 20vw;
+	float: left;
+	display: block;
+	border-radius: 1.5vw;
+}
+
+#row2 p,
+#row4 p,
+#row6 p {
+	display: table-cell;
+	height: 20vw;
+	text-align: right;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.6vw;
+	color: black;
+	vertical-align: middle;
+}
