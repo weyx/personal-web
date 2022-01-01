@@ -3,23 +3,77 @@
 	grid-area: grid;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1.7fr 5fr 5fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "navigation text picture";
+	grid-template-columns: 1.7fr 10fr;
+	grid-template-rows: 30% 40% 30%;
+	grid-template-areas:
+		"navigation  logo"
+		"navigation  content"
+		"navigation  .";
 }
 
 #navigation {
 	background-color: #dbdbdb;
 	grid-area: navigation;
+	display: block;
+	float: left;
+	position: fixed;
+	height: 100vh;
 }
 
-#text {
+#logo {
+	width: 100%;
 	align-items: center;
-	grid-area: text;
+	grid-area: logo;
 	display: grid;
 }
 
-#picture {
-	grid-area: picture;
+#content {
+	width: 100%;
+	grid-area: content;
+	display: grid;
 }
 /* end of grid setting */
+
+#logo img {
+	height: 10vw;
+	width: 100%;
+	object-fit: scale-down;
+	object-position: center center;
+}
+
+.contacts {
+	float: right;
+	height: 25vw;
+	width: 100%;
+	background-color: rgb(228, 138, 138);
+	align-items: center;
+	display: grid;
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+	color: white;
+	font-size: 3vw;
+}
+
+.contacts p {
+	text-align: center;
+	color: white;
+	font-size: 2vw;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.sosmed {
+	display: flex;
+	justify-content: center;
+}
+
+.sosmed img {
+	padding: 0;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	width: 3vw;
+	-webkit-filter: grayscale(1) invert(1);
+	filter: grayscale(1) invert(1);
+}
