@@ -1,0 +1,55 @@
+/* grid setting */
+.grid {
+	grid-area: grid;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1.7fr 5fr 5fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "navigation text picture";
+}
+
+#navigation {
+	background-color: #dbdbdb;
+	grid-area: navigation;
+}
+
+#text {
+	align-items: center;
+	grid-area: text;
+	display: grid;
+}
+
+#picture {
+	grid-area: picture;
+}
+/* end of grid setting */
+
+/* text grid content */
+h2 {
+	padding-left: 1.5vw;
+	font-size: 5vw;
+	margin: 0;
+	margin-bottom: 1vw;
+}
+
+p {
+	padding-left: 1.5vw;
+	font-size: 2vw;
+	font-family: Helvetica, sans-serif;
+}
+/* end of text grid content  */
+
+/* picture grid  */
+#picture img {
+	content: url(/home/pic/home.png);
+	max-height: 100%;
+	max-width: 60vw;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	float: right;
+	filter: grayscale(100%);
+}
+/* end of picture grid content  */

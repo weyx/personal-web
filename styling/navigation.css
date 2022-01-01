@@ -1,0 +1,52 @@
+#navigation img {
+	padding: 2vw;
+	height: 12vw;
+	width: 12vw;
+	border-radius: 50%;
+	content: url(/styling/pic/profile.png);
+}
+
+#navigation img:hover {
+	content: url(/styling/pic/profile.jpeg);
+}
+
+h1 {
+	font-size: 2vw;
+	text-align: center;
+	margin-bottom: 3.5vw;
+}
+
+#navigation ul {
+	padding: 0;
+}
+
+#navigation li {
+	text-align: center;
+	color: black;
+	font-size: 1.3vw;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 2.5vw;
+	list-style-type: none;
+}
+
+#current {
+	color: #c70909;
+	font-weight: bold;
+	text-decoration: underline;
+	text-underline-offset: 0.7vw;
+	text-decoration-thickness: 0.3vw;
+}
+
+a,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.7vw;
+	text-decoration-thickness: 0.3vw;
+}

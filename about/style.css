@@ -1,0 +1,31 @@
+/* grid setting */
+.grid {
+	grid-area: grid;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1.7fr 10fr;
+	grid-template-rows: 100% 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"navigation row1 row1"
+		"navigation row2 row2"
+		"navigation row3 row3"
+		". row4 row4"
+		". row5 row5"
+		". row6 row6";
+}
+
+#navigation {
+	background-color: #dbdbdb;
+	grid-area: navigation;
+}
+
+#text {
+	align-items: center;
+	grid-area: text;
+	display: grid;
+}
+
+#picture {
+	grid-area: picture;
+}
+/* end of grid setting */
