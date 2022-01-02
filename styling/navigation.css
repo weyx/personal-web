@@ -50,3 +50,60 @@ a:hover {
 	text-underline-offset: 0.7vw;
 	text-decoration-thickness: 0.3vw;
 }
+
+@media only screen and (max-width: 800px) {
+	#navigation img {
+		padding: 1vw;
+		float: right;
+	}
+
+	#navigation img {
+		content: url("/styling/pic/profile.jpeg");
+	}
+
+	#navigation ul,
+	#navigation li,
+	#navigation h1 {
+		margin: 0;
+	}
+
+	#navigation h1 {
+		font-size: 3vw;
+		padding-right: 0vw;
+	}
+
+	#navigation ul {
+		height: 100%;
+		width: 100%;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		text-align: right;
+		display: table;
+	}
+
+	#navigation li {
+		font-weight: 700;
+		height: 100%;
+		font-size: 3vw;
+		padding-right: 1vw;
+		padding-left: 1vw;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	#navigation {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	#current {
+		text-decoration: underline;
+		text-underline-offset: 10vw;
+		text-decoration-thickness: 0.5vw;
+	}
+
+	#currentList {
+		background-color: #00000033;
+	}
+}
