@@ -51,10 +51,11 @@ p {
 	transform: scaleX(-1);
 	float: right;
 	filter: grayscale(100%);
+	z-index: -1;
 }
 /* end of picture grid content  */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
 	.grid {
 		grid-area: grid;
 		height: 100vh;
@@ -90,7 +91,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1080px) {
 	#picture img {
 		object-fit: relative;
 		height: 130vw;

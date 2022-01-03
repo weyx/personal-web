@@ -78,7 +78,7 @@ h2 {
 	filter: grayscale(1) invert(1);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
 	.grid {
 		grid-area: grid;
 		height: 100vh;
@@ -122,7 +122,7 @@ h2 {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1080px) {
 	#logo img {
 		padding-top: 3vh;
 		padding-bottom: 3vh;

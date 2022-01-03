@@ -51,7 +51,7 @@ a:hover {
 	text-decoration-thickness: 0.3vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
 	#navigation img {
 		padding: 1vw;
 		float: right;
@@ -104,7 +104,7 @@ a:hover {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1050px) {
 	#navigation {
 		height: 4em;
 	}
