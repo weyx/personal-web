@@ -77,3 +77,71 @@ h2 {
 	-webkit-filter: grayscale(1) invert(1);
 	filter: grayscale(1) invert(1);
 }
+
+@media only screen and (max-width: 800px) {
+	.grid {
+		grid-area: grid;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 6fr;
+		grid-template-areas:
+			"navigation"
+			"logo"
+			"content";
+	}
+
+	#logo img {
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		height: 20vh;
+	}
+
+	#content {
+		display: block;
+	}
+
+	.contactWrap {
+		background-color: rgb(228, 138, 138);
+		height: 100%;
+	}
+
+	h2 {
+		font-size: 5vw;
+	}
+
+	.contacts p {
+		font-size: 4vw;
+	}
+
+	.sosmed img {
+		width: 5vh;
+		padding-bottom: 2vh;
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#logo img {
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+		height: 15vh;
+	}
+
+	h2 {
+		font-size: 7.5vw;
+	}
+
+	.contacts p {
+		font-size: 6vw;
+		margin: 3vh;
+	}
+
+	.sosmed img {
+		width: 5vh;
+		padding-bottom: 2vh;
+		padding-left: 4vw;
+		padding-right: 4vw;
+	}
+}

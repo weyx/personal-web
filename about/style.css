@@ -29,17 +29,14 @@
 
 #row1 {
 	background-color: #d77878;
-	grid-area: row1;
 }
 
 #row2 {
 	background-color: #f2cfcf;
-	grid-area: row2;
 }
 
 #row3 {
 	background-color: #d04e4e;
-	grid-area: row3;
 }
 
 #row3 img:hover {
@@ -48,17 +45,14 @@
 
 #row4 {
 	background-color: #dd9696;
-	grid-area: row4;
 }
 
 #row5 {
 	background-color: #bc6262;
-	grid-area: row5;
 }
 
 #row6 {
 	background-color: #dd9696;
-	grid-area: row6;
 }
 
 #row1 img,
@@ -103,4 +97,63 @@
 	font-size: 1.6vw;
 	color: black;
 	vertical-align: middle;
+}
+
+@media only screen and (max-width: 800px) {
+	.grid {
+		grid-area: grid;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 7em 100%;
+		grid-template-areas:
+			"navigation"
+			"row";
+	}
+
+	#row1 p,
+	#row2 p,
+	#row3 p,
+	#row4 p,
+	#row5 p,
+	#row6 p {
+		font-size: 2vh;
+		height: 24vh;
+	}
+
+	#row img {
+		height: 23vh;
+	}
+
+	#row3 img,
+	#row4 img {
+		width: 28vh;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.grid {
+		grid-template-rows: 4em 100%;
+	}
+
+	#row img {
+		height: 20vh;
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#row1 p,
+	#row2 p,
+	#row3 p,
+	#row4 p,
+	#row5 p,
+	#row6 p {
+		height: auto;
+		display: inline-table;
+		text-align: center;
+	}
 }

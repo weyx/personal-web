@@ -59,12 +59,12 @@ p {
 		grid-area: grid;
 		height: 100vh;
 		display: grid;
-		grid-template-columns: 5fr 5fr;
+		grid-template-columns: 5fr;
 		grid-template-rows: 1fr 7fr 3fr;
 		grid-template-areas:
-			"navigation navigation"
-			"text text"
-			"picture picture";
+			"navigation"
+			"text"
+			"picture";
 	}
 
 	#text {
@@ -91,20 +91,8 @@ p {
 }
 
 @media only screen and (max-width: 400px) {
-	.grid {
-		grid-area: grid;
-		height: 100vh;
-		display: grid;
-		grid-template-columns: 5fr 5fr;
-		grid-template-rows: 1fr 7fr 3fr;
-		grid-template-areas:
-			"navigation navigation"
-			"text text"
-			"picture picture";
-	}
-
 	#picture img {
-		object-fit: cover;
+		object-fit: relative;
 		height: 130vw;
 	}
 
@@ -114,5 +102,11 @@ p {
 
 	p {
 		font-size: 6vw;
+	}
+}
+
+@media only screen and (max-height: 400px) {
+	#picture img {
+		max-height: 65vh;
 	}
 }

@@ -94,16 +94,18 @@ a:hover {
 	#navigation {
 		display: flex;
 		align-items: center;
-		height: 100%;
-	}
-
-	#current {
-		text-decoration: underline;
-		text-underline-offset: 10vw;
-		text-decoration-thickness: 0.5vw;
+		position: fixed;
+		width: 100vw;
+		height: 7em;
 	}
 
 	#currentList {
 		background-color: #00000033;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#navigation {
+		height: 4em;
 	}
 }
