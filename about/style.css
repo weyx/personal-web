@@ -99,7 +99,7 @@
 	vertical-align: middle;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
 	.grid {
 		grid-area: grid;
 		height: 100vh;
@@ -131,7 +131,7 @@
 	}
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 800px) {
 	.grid {
 		grid-template-rows: 4em 100%;
 	}
