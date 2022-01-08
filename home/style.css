@@ -55,7 +55,7 @@ p {
 }
 /* end of picture grid content  */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
 	.grid {
 		grid-area: grid;
 		height: 100vh;
@@ -91,7 +91,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1050px) {
 	#picture img {
 		object-fit: relative;
 		height: 130vw;
