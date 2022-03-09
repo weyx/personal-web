@@ -6,10 +6,6 @@
 	content: url(/styling/pic/profile.png);
 }
 
-#navigation img:hover {
-	content: url(/styling/pic/profile.jpeg);
-}
-
 h1 {
 	font-size: 2vw;
 	text-align: center;
@@ -52,7 +48,7 @@ a:hover {
 	text-decoration-thickness: 0.3vw;
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	#navigation img {
 		padding: 1vw;
 		float: right;
@@ -109,4 +105,4 @@ a:hover {
 	#navigation {
 		height: 4em;
 	}
-} */
+}

@@ -97,46 +97,30 @@ img {
 			"picture";
 	}
 
+	h3 {
+		font-size: 8vw;
+	}
+
+	table {
+		font-size: medium;
+	}
+
+	.nama {
+		width: 100%;
+		padding-right: 8vw;
+	}
+
+	#row {
+		width: min-content;
+		height: 100%;
+	}
+
+	img {
+		max-height: 35vw;
+		max-width: 35vw;
+	}
+
 	#text {
 		align-self: start;
-	}
-
-	h2 {
-		padding-left: 3.5vw;
-		padding-top: 9vh;
-		font-size: 11vw;
-		margin: 0;
-	}
-
-	p {
-		padding-left: 3.5vw;
-		font-size: 5vw;
-		margin: 0;
-	}
-
-	#picture img {
-		object-fit: cover;
-		height: 100vw;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#picture img {
-		object-fit: relative;
-		height: 130vw;
-	}
-
-	h2 {
-		font-size: 12vw;
-	}
-
-	p {
-		font-size: 6vw;
-	}
-}
-
-@media only screen and (max-height: 400px) {
-	#picture img {
-		max-height: 65vh;
 	}
 }
